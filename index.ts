@@ -1,5 +1,7 @@
 import express from 'express';
 
+
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -69,3 +71,7 @@ app.post('/quote', (_req, _res) => {
 app.listen(port, () => {
     console.log("Server listening on Port", port);
 });
+
+
+export default app;
+
